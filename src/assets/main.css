@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-primary: #3e2e27;
+  --color-primary-light: #5d463c;
+  --color-primary-dark: #2a1e19;
+
+  --color-secondary: #f99d1c;
+  --color-secondary-light: #fbb555;
+  --color-secondary-dark: #e0890b;
+
+  /* Neutral / Backgrounds */
+  --color-background: #f8f6f4; /* Slightly cleaner beige */
+  --color-surface: #ffffff;
+  --color-surface-alt: #f2efe9;
+
+  /* Text Colors */
+  --color-text-main: #1f1713;
+  --color-text-muted: #6b5d55;
+  --color-text-light: #9c8e85;
+
+  /* Status */
+  --color-success: #10b981;
+  --color-error: #ef4444;
+
+  /* Typography */
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1c7c0;
+  border-radius: 5px;
+  border: 2px solid var(--color-background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
