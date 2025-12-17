@@ -28,7 +28,7 @@
       <div
         class="flex items-center justify-between pt-4 border-t border-gray-200"
       >
-        <span class="font-bold text-lg text-primary">R. {{ price }}</span>
+        <span class="font-bold text-lg text-primary">Rp. {{ price }}</span>
         <button
           class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-[#e08d19] text-sm font-semibold transition-colors shadow-md hover:shadow-lg"
         >
